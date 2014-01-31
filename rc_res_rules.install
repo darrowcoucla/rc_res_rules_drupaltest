@@ -34,7 +34,7 @@ function rc_res_rules_install() {
     'time_unit'     => 168,
     'group_verify'     => "yes",
   );
-  db_insert('rc_res_rules_submit')
+  db_insert('rc_res_rules')
     ->fields($fields)
     ->execute();
 
@@ -53,7 +53,7 @@ function rc_res_rules_install() {
     'group_verify'     => "yes",
     'uid'     => 1,
   );
-  db_insert('rc_res_rules_submit')
+  db_insert('rc_res_rules')
     ->fields($fields)
     ->execute();
 
@@ -72,7 +72,7 @@ function rc_res_rules_install() {
     'group_verify'     => "yes",
     'uid'     => 2,
   );
-  db_insert('rc_res_rules_submit')
+  db_insert('rc_res_rules')
     ->fields($fields)
     ->execute();
 
